@@ -1,0 +1,114 @@
+.rightMenu{
+    background-color: var(--Panels);
+    position: relative;
+    z-index: 10;
+    border-radius: 30px 30px 0px 0px;
+    padding: 9px 0px 1px 0px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    display: flex;
+    width: 100%;
+    height: 110px;
+}
+
+.notificationPanel{
+    color: var(--White);
+}
+
+.notificationCard{
+    margin: 5px 0 5px 24px;
+    width: 56px
+}
+
+.media{
+    font-size: 6px;
+}
+
+.mediaCard{
+    background-color: var(--TopCard);
+    border-radius: 10px 10px 0 0;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wspIcon{
+    background-color: var(--IconW);
+    position: relative;
+    left: -2px;
+    top: -3px;
+    border-radius: 5px;
+    width: 16px;
+    height: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dataCard{
+    background-color: var(--BottomCard);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 42px;
+}
+
+.nName{
+    font-size: 10px;
+    flex-wrap: wrap;
+    max-width: 44px
+}
+
+.nTime{
+    font-size: 6px;
+    opacity: 0.5;
+    margin-right: 17px;
+}
+
+@media(min-width:768px) {
+    .rightMenu{
+        width: 80px;
+        position: relative;
+        border-radius: 45px 0 0 45px ;
+        padding: 27px 0px 0px 0px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+    .notificationPanel{
+        direction: ltr;
+        margin-left: -13px;
+    }
+    ::-webkit-scrollbar {
+        width: 13px;
+      }
+       
+    ::-webkit-scrollbar-thumb {
+        background: var(--White); 
+        border-radius: 2px;
+        background-clip: padding-box;
+        border-left: 9px var(--Panels) solid;
+      }
+    
+      ::-webkit-scrollbar-track {
+        margin-block: 200px;
+     }
+}
+
+@media(min-width:1024px) {
+    .rightMenu{
+        width: 110px;
+    }
+    .notificationCard{
+        transform: scale(0.8);
+    }
+    .notificationPanel{
+        margin-left: -18px;
+    }
+    }

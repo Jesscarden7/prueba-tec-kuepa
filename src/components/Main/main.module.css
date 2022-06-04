@@ -1,0 +1,298 @@
+.main {
+  background-color: var(--Main);
+  padding: 20px;
+  border-radius: 30px 30px 0px 0px;
+  margin: -73px 0px -25px 0px;
+  overflow-y: scroll;
+  max-height: 100%;
+  padding-bottom: 50px;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* Goal Stats */
+
+.mainStats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--White);
+  height: 70px;
+  border-radius: 10px;
+  margin-top: 17px;
+  padding: 4px;
+  width: 100%;
+}
+
+.progressBar {
+  height: 100%;
+}
+
+.metrics {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.metrics p {
+  font-size: 10px;
+}
+
+.metrics div span {
+  margin-left: 10px;
+  font-size: 10px;
+}
+
+.goal {
+  background-color: var(--White);
+  border-radius: 10px;
+  margin-top: 16px;
+  padding: 19px;
+  width: 100%;
+}
+
+section div.goal p {
+  font-size: 12px;
+  margin: 7px 0px;
+}
+
+.result {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* DailyPlanning */
+
+.planning {
+  background-color: var(--White);
+  border-radius: 10px;
+  margin: 18px 0px 9px 0px;
+  padding: 19px;
+}
+
+.planning tr:nth-child(odd) {
+  background-color: #ecf3fd;
+  border-left: 3px solid #af81f6;
+}
+
+.planning tr:nth-child(even) {
+  border-left: 3px solid #15859a;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+td {
+  border: none;
+  padding: 3px;
+}
+
+.planning h5 {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.planning small {
+  font-size: 10px;
+}
+
+.tableIcons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Schedule */
+section div.plan {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+section div.plan p {
+  font-size: 10px;
+  margin: 8px;
+}
+
+section div.plan h3 {
+  font-size: 20px;
+}
+
+/* LeadsCard  */
+section.card {
+  display: flex;
+  background-color: var(--White);
+  border-radius: 10px;
+  justify-content: space-evenly;
+  padding: 11px;
+  margin-top: 15px;
+}
+
+.numberCard {
+  align-self: center;
+  background-color: #ad83f6;
+  background-image: linear-gradient(#ad83f6, #84b6fa);
+  border-radius: 10px;
+  padding: 11px;
+}
+
+.numberCard div {
+  background-color: var(--White);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    border-radius: 43px 0 0 43px;
+    margin: 0 -40px 0 -100px;
+    padding-right: 47px;
+  }
+  .mainStats {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .statsContainer {
+    height: 140px;
+    width: 60%;
+    align-items: center;
+  }
+  .progressBar {
+    height: 117px;
+  }
+  .CircularProgressbar {
+    width: 70%;
+    vertical-align: middle;
+  }
+  .goal {
+    width: 180px;
+    height: 142px;
+    padding: 20px 7px 0px 7px;
+  }
+  section div.goal div.result p {
+    font-size: 10px;
+  }
+  .planning {
+    padding: 13px 0px 27px 0px;
+  }
+  .planning h5 {
+    padding-left: 20px;
+  }
+  section div.plan h3 {
+    font-size: 23px;
+  }
+  section.main h2 {
+    font-size: 25px;
+  }
+  section div.plan p {
+    font-size: 12px;
+  }
+  .numberCard {
+    padding: 25px;
+  }
+  .numberCard div {
+    width: 80px;
+    height: 80px;
+    font-size: 42px;
+    color: #ad83f6;
+    font-weight: 600;
+  }
+  .contact p {
+    font-size: 18px;
+    margin: 8px;
+  }
+  section.card {
+    width: 82%;
+  }
+  .leadsCardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main {
+    margin: 0 -40px 0 -50px;
+  }
+  .metrics {
+    display: flex;
+    flex-wrap: wrap;
+    width: 93%;
+  }
+  .metrics p {
+    font-size: 13px;
+    width: 90px;
+  }
+  .metrics div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 23px 10px 5px;
+    align-items: center;
+  }
+  .metrics div span {
+    margin-left: 20px;
+    font-size: 22px;
+  }
+  .statsContainer {
+    height: 120px;
+    width: 510px;
+    margin-right: 34px;
+  }
+  .goal {
+    height: 120px;
+  }
+  .mainStats {
+    justify-content: unset;
+  }
+  .planningContainer {
+    display: flex;
+    margin-top: 70px;
+  }
+  .leadsCardContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: initial;
+  }
+  .numberCard {
+    padding: 13px;
+  }
+  .numberCard div {
+    width: 60px;
+    height: 60px;
+    font-size: 37px;
+  }
+  section.card {
+    margin-left: 5px;
+    max-width: 180px;
+    padding: 0 0 0 8px;
+  }
+  .contact p {
+    font-size: 10px;
+    margin: 5px;
+  }
+  .planning {
+    width: 453px;
+    margin-right: 10px;
+    height: fit-content;
+  }
+  .cardsPrincipalContainer {
+    width: 45%;
+  }
+}
