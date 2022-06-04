@@ -1,12 +1,11 @@
 import React from 'react';
 import logo from "../../assets/images/logo.png"
-import profilePic from "../../assets/images/profile.jpg"
 import { RiHomeLine } from "react-icons/ri";
 import { ImClipboard } from "react-icons/im";
 import { AiOutlineDownSquare, AiOutlinePicCenter } from "react-icons/ai";
 import styles from "./leftMenu.module.css"
 
-function LeftMenu() {
+function LeftMenu( {avatarUrl}) {
     return (
         <section className={styles.sideNavbar}>
             <div>
@@ -28,7 +27,7 @@ function LeftMenu() {
                     <AiOutlineDownSquare color='white' fontSize={20}/>
                 </a>
                 <a className={styles.navLink} href='/'>
-                    <img className={styles.profilePic} src={profilePic} alt= "Kuepa"/> 
+                    <img className={styles.profilePic} src={avatarUrl} alt= "Kuepa"/> 
                 </a>
             </div>
 

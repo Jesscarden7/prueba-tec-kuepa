@@ -4,12 +4,12 @@ import GoalStats from './GoalsStats';
 import DailyPlanning from './DailyPlanning';
 import styles from "./main.module.css";
 
-function Main() {
+function Main({user}) {
     return (
         <section className={styles.main}>
             <Header/>
-            <h2>Hola, Jorge</h2>
-            <GoalStats/>
+            <h2>Hola, {user.profile.name}</h2>
+            <GoalStats user={user} />
             <DailyPlanning/>
         </section>
     );

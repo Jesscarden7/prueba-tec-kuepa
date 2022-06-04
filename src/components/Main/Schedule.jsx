@@ -15,7 +15,6 @@ function Schedule() {
                 <LeadsCard/>
                 <LeadsCard/>
                 <LeadsCard/>
-                <LeadsCard/>
             </div>
         </section>
      );

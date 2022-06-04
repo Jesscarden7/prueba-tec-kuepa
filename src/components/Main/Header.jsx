@@ -3,6 +3,7 @@ import { TbSearch } from "react-icons/tb";
 import styles from  "./main.module.css"
 
 function Header() {
+    const todayDate = (new Date()).toString().split(' ').splice(1,3).join(' ');
     return ( 
         <header className={styles.header}>
             <div>
@@ -14,10 +15,7 @@ function Header() {
                 </form>
             </div>
             <div>
-                <select>
-                    <option>Wed, 20 May</option>
-                    <option>Wed, 20 May</option>
-                </select>
+                <span>{todayDate}</span>
             </div>
         </header>
      );

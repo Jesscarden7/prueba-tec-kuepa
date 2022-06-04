@@ -104,6 +104,14 @@ td {
   margin-bottom: 10px;
 }
 
+.planning tbody td#name{
+  font-size: 14px;
+}
+
+.planning p {
+  font-size: 14px;
+}
+
 .planning small {
   font-size: 10px;
 }
@@ -288,7 +296,7 @@ section.card {
     margin: 5px;
   }
   .planning {
-    width: 453px;
+    width: 419px;
     margin-right: 10px;
     height: fit-content;
   }

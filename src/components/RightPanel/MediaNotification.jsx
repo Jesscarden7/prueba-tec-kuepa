@@ -2,7 +2,7 @@ import React from 'react';
 import styles from "./rightPanel.module.css"
 import { FaWhatsapp } from "react-icons/fa";
 
-function MediaNotification() {
+function MediaNotification({name, time}) {
     return ( 
         <section className={styles.notificationPanel}>
             <div className={styles.notificationCard}>
@@ -13,8 +13,8 @@ function MediaNotification() {
                     <span className={styles.media}>WHATSAPP</span>
                 </div>
                 <div className={styles.dataCard}>
-                    <p className={styles.nName}>Jorge García </p>
-                    <p className={styles.nTime}>6 min ago</p>
+                    <p className={styles.nName}>{name}</p>
+                    <p className={styles.nTime}>{time} min ago</p>
                 </div>
             </div>
         </section>
