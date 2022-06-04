@@ -8,13 +8,13 @@ function Header() {
         <header className={styles.header}>
             <div>
                 <form action="/" method="get">
-                    <div>
-                        <TbSearch/>
-                        <input type="text" placeholder="Search"/> 
+                    <div className={styles.searchContainer}>
+                        <div><TbSearch/></div>
+                        <input type="text" placeholder="Search..." className={styles.search}/> 
                     </div>
                 </form>
             </div>
-            <div>
+            <div className={styles.date}>
                 <span>{todayDate}</span>
             </div>
         </header>

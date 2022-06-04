@@ -1,3 +1,27 @@
+.searchContainer{
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f7;
+  border-radius: 7px;
+  padding-left: 6px;
+}
+.search{
+  border: none;
+  background-color: #f2f2f7;
+  border-radius: 7px;
+  height: 26px;
+  padding-left: 4px;
+  width: 130px;
+
+}
+.date{
+  border: none;
+  background-color: #f2f2f7;
+  border-radius: 7px;
+  height: 26px;
+  width: 133px;
+  text-align: center;
+}
 .main {
   background-color: var(--Main);
   padding: 20px;
@@ -166,7 +190,7 @@ section.card {
 @media (min-width: 768px) {
   .main {
     border-radius: 43px 0 0 43px;
-    margin: 0 -40px 0 -100px;
+    margin: 0 -40px 0 -86px;
     padding-right: 47px;
   }
   .mainStats {
@@ -233,6 +257,9 @@ section.card {
 }
 
 @media (min-width: 1024px) {
+  .search{
+    width: 100%;
+  }
   .main {
     margin: 0 -40px 0 -85px;
   }
